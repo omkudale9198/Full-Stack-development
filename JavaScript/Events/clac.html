@@ -4,49 +4,61 @@
 	
 	<script>
 		
-		let a=10;
-		let b=4;
 		
-		document.write("First Number= "+a);
-		document.write("<br>");
-		document.write("Second Number= "+b);
 	
 		function add(){
-			let c=a+b;
-			alert("Addition of given two numbers is: "+c);
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)+Number(sno);
+			
 		}
 		
 		function sub(){
-			let c=a-b;
-			alert("Subtraction of given two numbers is: "+c);
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)-Number(sno);
 		}
 		
 		function mul(){
-			let c=a*b;
-			alert("Subtraction of given two numbers is: "+c);
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)*Number(sno);
 		}
 		
 		function div(){
-			let c=a/b;
-			alert("Division of given two numbers is: "+c);
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)/Number(sno);
 		}
 		
 		function mod(){
-			let c=a%b;
-			alert("Modulus of given two numbers is: "+c);
+			let fno=f1.fno.value;
+			let sno=f1.sno.value;
+			
+			f1.res.value=Number(fno)%Number(sno);
 		}
 		
 		
 		
 	</script>
 	
-	<form>
-		
-		<input type="button" value="+" onclick="add()">
-		<input type="button" value="-" onclick="sub()">
-		<input type="button" value="*" onclick="mul()">
-		<input type="button" value="/" onclick="div()">
-		<input type="button" value="%" onclick="mod()">
+	<form name="f1">
+		First No.:<input type="text" name="fno">
+		Second No.:<input type="text" name="sno">
+		<br>
+		<br>
+		<abbr  title="addition"><input type="button" value="+" onclick="add()"></abbr>
+		<abbr  title="subtraction"><input type="button" value="-" onclick="sub()"></abbr>
+		<abbr  title="multiplication"><input type="button" value="*" onclick="mul()"></abbr>
+		<abbr  title="division"><input type="button" value="/" onclick="div()"></abbr>
+		<abbr  title="modulus"><input type="button" value="%" onclick="mod()"></abbr>
+		<br>
+		<br>
+		<input type="text" name="res">
 		
 	</form>
 	
