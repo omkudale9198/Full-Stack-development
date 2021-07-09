@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<script>
+			
+			function fun(){
+				let p1=Number(prompt("Enter 1st number:"));
+				let p2=Number(prompt("Enter 2nd number:"));
+				let op=prompt("Enter your choice +,-,*,/,%");
+				
+				if(confirm("Are you want to continue...?")){
+					switch(op){
+						case "+":
+							alert("Addition"+(p1+p2))
+							break;
+						case "-":
+							alert("Subtraction"+(p1-p2))
+							break;
+						case "*":
+							alert("Multiplication"+(p1*p2))
+							break;
+						case "/":
+							alert("Division"+(p1/p2))
+							break;
+						case "%":
+							alert("Modulus"+(p1%p2))
+							break;
+						default:
+							alert("Please enter valid sign...!")
+					}
+				}
+				
+				else{
+					alert("Back to main page");
+				}
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+		<input type="Button" value="click" onclick="fun()">
+	</body>
+</html>
