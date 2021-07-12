@@ -1,0 +1,224 @@
+<html>
+
+	<head>
+		<style>
+			*{
+				padding=0;
+				margin=0px;
+			}
+			
+			.main{
+				height:750px;
+				width:500px;
+				margin:auto;
+			}
+			
+			.header{
+				height:100px;
+				width:500px;
+				background:yellow;
+				line-height:100px;
+			}
+			
+			.content{
+				height:350px;
+				width:500px;
+				position:relative;
+				background:gray;
+			}
+			
+			.content1{
+				height:300px;
+				width:400px;
+				margin-left:50px;
+				margin-right:50px;
+				margin-top:25px;
+				margin-bottom:25px;
+				position:absolute;
+				background:skyblue;
+			}
+		</style>
+	
+		<script>
+			function fun(){
+				
+				//uname
+				let uname=f1.uname.value;
+				if(uname==""){
+					alert("Please enter username");
+					return false;
+				}
+				
+				if(uname.length<5 || uname.length>10){
+					alert("Username length must be 5-10 characters");
+					return false;
+				}
+				
+			
+				//password
+				
+				let pass=f1.pass.value;
+				let cpass=f1.cpass.value;
+				
+				if(pass==""){
+					alert("Please enter password");
+					return false;
+				}
+				
+				//uppercase
+				
+				let flag=0;
+				for(let i=0; i<=pass.length; i++){
+					if(pass.charCodeAt(i)>=65 && pass.charCodeAt(i)<=90){
+						flag=1;
+					}
+				}
+				
+				if(flag==0){
+					alert("Password must contain atleast one uppercase");
+					return false;
+				}
+				
+				//special character
+				
+				let flag1=0;
+				
+				for(let i=0; i<=pass.length; i++){
+					if(pass.charCodeAt(i)>=33 && pass.charCodeAt(i)<=42 || pass.charCodeAt(i)==64){
+						flag1=1;
+					}
+				}
+				
+				
+				if(flag1==0){
+					alert("Password must contain atleast one special charcter");
+					return false;
+				}
+				
+				
+				if(pass!=cpass){
+					alert("Password does not match!");
+					return false;
+				}
+				
+				//Mobile
+				
+				let mob=f1.mobile.value;
+				if(mob==""){
+					alert("Please Enter Mobile Number");
+					return false;
+				}
+				
+				if(isNaN(mob)){
+					alert("Enter only number");
+					return false;
+				}
+				
+				if(mob.length!=10){
+					alert("Mobile Number must be of 10 digits");
+					return false;
+				}
+				
+				if(mob.charAt(0)<6){
+					alert("Number should be start with 7-10");
+					return false;
+				}
+				
+				//email
+				let email=f1.email.value;
+				if(email==""){
+					alert("Pleae enter e-mail id");
+					return false;
+				}
+				
+				if(email.charAt(email.length-3)!="." && email.charAt(email.length-4)!="."){
+					alert("Plase enter valid e-mail address");
+					return false;
+				}
+				
+				//gender
+				
+				if(f1.gender[0].checked==false && f1.gender[1].checked==false){
+					alert("Please Selecr Gender");
+					return false;
+				}
+				
+				//Terms & conditions
+				
+				if(f1.c.checked==false){
+					alert("Please accept Terms & conidtions");
+					return false;
+				}
+				
+				
+				
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div class="main">
+		
+			<div class="header">
+				
+				<h1>Form using Events</h1>
+				
+			</div>
+			
+			<div class="content">
+			<div class="content1">
+				
+				<form name="f1" onsubmit="fun()"> 
+					
+					<table cellspacing=5 cellpadding=5>
+					
+						<tr>
+							<th>Username:</th>
+							<td><input type="name" name="uname" ></td>
+						</tr>
+						
+						<tr>
+							<th>Password</th>
+							<td><input type="password" name="pass"></td>
+						</tr>
+						
+						<tr>
+							<th>Confirm Password</th>
+							<td><input type="password" name="cpass"></td>
+						</tr>
+						
+						<tr>
+							<th>E-mail</th>
+							<td><input type="email" name="email"></td>
+						</tr>
+						
+						<tr>
+							<th>Mobile</th>
+							<td><input type="name" name="mobile"></td>
+						</tr>
+						
+						<tr>
+							<th>Gender</th>
+							<td><input type="radio" name="gender" value="male">Male
+								<input type="radio" name="gender" value="female">Female
+							</td>
+						</tr>
+						
+						<tr>
+							<th colspan=2><input type="checkbox" name="c">I am agree with Terms & Conditions</th>
+						</tr>
+						
+						<tr>
+							<th colspan=2><input type="submit" value="Submit"></th>
+						</tr>
+						
+					</table>
+					
+				</form>
+			</div>	
+			</div>
+			
+		</div>
+	</body>
+
+</html>
