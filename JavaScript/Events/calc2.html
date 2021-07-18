@@ -1,0 +1,131 @@
+<html>
+	<head>
+		
+		<script>
+			function Calc(val)
+			{
+					form.cal.value+=val;
+			}
+			
+			function solve()
+			{
+				let x=form.cal.value;
+				let y=eval(x);
+				form.cal.value=y;
+			}
+			
+			function clr()
+			{
+				form.cal.value="";
+			}
+			
+			
+		</script>
+		
+		<style>
+		
+			.main{
+				height:350px;
+				width:200px;
+				margin:auto;
+				background:yellow;
+				border:2px solid black;
+				border-radius:10px;
+			}
+			
+			.header{
+				
+				height:50px;
+				width:200px;
+				line-height:50px;
+				background:skyblue;
+				text-align:center;
+			}
+			
+			.buttons{
+				height:250px;
+				width:200px;
+				margin:auto;
+			}
+			#txt{
+				height:40px;
+				width:200px;
+				margin-top:10px;
+				margin-bottom:10px;
+				direction:rtl;
+				
+			}
+			
+			#btn{
+				height:30px;
+				width:30px;
+				margin-left:12px;
+				margin-top:5px;
+				background:red;
+			}
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<div class="main">
+			
+			<div class="header">
+				<h1>Calculator</h1>
+			</div>
+			
+			
+			<div class="buttons">
+				
+				<form name="form">
+					
+					<table>
+						<input id="txt" type="text" name="cal" >
+						
+						<tr>
+							<td><input id="btn" type="button" value="1" onclick=Calc('1')></td>
+							<td><input id="btn" type="button" value="2" onclick=Calc('2')></td>
+							<td><input id="btn" type="button" value="3" onclick=Calc('3')></td>
+							<td><input id="btn" type="button" value="C" onclick="clr()"></td>
+						</tr>
+						
+						<tr>
+							<td><input id="btn" type="button" value="4" onclick=Calc('4')></td>
+							<td><input id="btn" type="button" value="5" onclick=Calc('5')></td>
+							<td><input id="btn" type="button" value="6" onclick=Calc('6')></td>
+							<td><input id="btn" type="button" value="+" onclick=Calc('+')></td>
+						</tr>
+						
+						<tr>
+							<td><input id="btn" type="button" value="7" onclick=Calc('7')></td>
+							<td><input id="btn" type="button" value="8" onclick=Calc('8')></td>
+							<td><input id="btn" type="button" value="9" onclick=Calc('9')></td>
+							<td><input id="btn" type="button" value="-" onclick=Calc('-')></td>
+						</tr>
+						
+						<tr>
+							<td><input id="btn" type="button" value="0" onclick=Calc('0')></td>
+							<td><input id="btn" type="button" value="00" onclick=Calc('00')></td>
+							<td><input id="btn" type="button" value="." onclick=Calc('.')></td>
+							
+						</tr>
+						
+						<tr>
+							<td><input id="btn" type="button" value="*" onclick=Calc('*')></td>
+							<td><input id="btn" type="button" value="/" onclick=Calc('/')></td>
+							<td><input id="btn" type="button" value="%" onclick=Calc('%')></td>
+							<td><input id="btn" type="button" value="=" onclick="solve()"></td>
+						</tr>
+						
+					</table>
+				
+				</form>
+				
+			</div>
+				
+			
+		</div>
+	
+	</body>
+</html>
