@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script>
+			
+			class Employee{
+				constructor(eid, ename){
+					this.eid=eid;
+					this.ename=ename;
+					console.log("This is a constructor");
+					
+				}
+				
+				details(){
+					console.log("E-id: "+this.eid);
+					console.log("E-name: "+this.ename);
+					console.log(this);
+				}
+				
+			}
+			
+			ajay=new Employee(101,"Ajay");
+			ajay.details();
+			
+			anil=new Employee(102,"Anil");
+			anil.details();
+			
+			
+		</script>
+	</head>
+</html>
