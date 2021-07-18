@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="Calculator.css">
+	<script >
+	function Cal(val)
+	{
+		form.cal.value+=val;
+	}
+
+	function solve()
+	{
+		let x = form.cal.value
+		let y = eval(x)
+		form.cal.value = y
+	}
+
+	function clr()
+	{
+		form.cal.value = ""
+	}
+	</script>
+	<style>
+	*
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+h2{
+	text-align: center;
+	padding: 8px;
+	background: #99e6ff;
+}
+
+div{
+	border: 2px solid black;
+	border-radius: 10px;
+	background: #99e6ff;
+	height: 520px;
+	width: 314px;
+	margin: auto;
+}
+
+#txt{
+	height:70px;
+	width:310px;
+	margin: 0px;
+	font-size: 22px;
+	background: #f2f2f2;
+	/direction: rtl;/
+}
+
+#btn{
+	height: 55px;
+	width: 55px;
+	margin: 10px;
+	background: #f2f2f2;
+	margin-left: 10px;
+	font-size: 22px;
+}
+
+</style>
+</head>
+<body>
+	<div>
+	<h2>Calculator</h2>
+	<form name="form">
+		<input id="txt" type="text" name="cal"><br><br>
+		<!--<input id="txt" type="text" name="cal"> -->
+		<input id="btn" type="button" value="1" onclick="Cal('1')">
+		<input id="btn" type="button" value="2" onclick="Cal('2')">
+		<input id="btn" type="button" value="3" onclick="Cal('3')">
+		<!--<input id="btn" type="reset" value="C">-->
+		<input id="btn" type="button" value="C" onclick="clr()">
+
+		<input id="btn" type="button" value="4" onclick="Cal('4')">
+		<input id="btn" type="button" value="5" onclick="Cal('5')">
+		<input id="btn" type="button" value="6" onclick="Cal('6')">
+		<input id="btn" type="button" value="+" onclick="Cal('+')">
+
+		<input id="btn" type="button" value="7" onclick="Cal('7')">
+		<input id="btn" type="button" value="8" onclick="Cal('8')">
+		<input id="btn" type="button" value="9" onclick="Cal('9')">
+		<input id="btn" type="button" value="-" onclick="Cal('-')">
+
+		<input id="btn" type="button" value="0" onclick="Cal('0')">
+		<input id="btn" type="button" value="00" onclick="Cal('00')">
+		<input id="btn" type="button" value="." onclick="Cal('.')">
+		<input id="btn" type="button" value="" onclick="Cal('')">
+
+		<input id="btn" type="button" value="sp" onclick="">
+		<input id="btn" type="button" value="/" onclick="Cal('/')">
+		<input id="btn" type="button" value="%" onclick="Cal('%')">
+		<input id="btn" type="button" value="=" onclick="solve()">
+
+	</form>
+	</div>
+</body>
+</html>
