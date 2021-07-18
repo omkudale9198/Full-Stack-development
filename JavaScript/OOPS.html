@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script>
+		/*
+			class Animal{
+				run(){
+					console.log("Run");
+				}
+				
+				eat(){
+					console.log("Eat");
+				}
+			}
+			
+			let dog=new Animal();
+			dog.run();
+			dog.eat();
+			
+			let cat=new Animal();
+			cat.eat();
+		*/
+
+			class Calc{
+				//let x;			//attribute of object
+				
+				add(a,b){
+					this.c=a+b;
+					console.log("Addition: "+this.c);
+				}
+				
+				display(){
+					console.log("C: "+this.c);
+					let x=500;
+					console.log("X: "+this.x);
+					console.log(this);
+				}
+				
+			}
+			
+			let obj=new Calc();
+			obj.add(10,20);
+			obj.x=1000;
+			obj.display();
+		</script>
+	</head>
+</html>
