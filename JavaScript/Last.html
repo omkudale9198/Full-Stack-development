@@ -1,0 +1,84 @@
+<html>
+<head>
+<script  type="text/javascript">
+function fun(demo){
+
+	console.log("this is fun function");
+	return demo;
+}
+
+let get=function (){
+	console.log("This is get function..");
+}
+
+
+console.log(fun(function (){
+	console.log("This is get function..");
+}));
+
+
+let number=[10,30,50,70];
+number[0]=100;
+console.log(number[0]);
+let x=number;
+console.log(x);
+
+
+let newarray=number.map(function(n){
+
+	return n*10;
+});
+
+
+console.log(newarray);
+
+number.forEach(function(n){
+	console.log(n);
+});
+
+
+let student={
+	name:"CNC",
+	loc:"Mumbai",
+	time:10,
+	test:()=>{
+		return this;
+	},
+	arr:[4,5,6,7]
+}	
+console.log(student.name);
+console.log(student.test())
+console.log(student.arr);
+
+
+class student1{
+	name="cnc";
+	loc="mumbai";
+	test(){
+	
+	return 100;
+	
+	}
+
+}
+
+std=new student1();
+console.log(std.test());
+
+
+let display=(a,b)=>{
+	return a+b;
+}
+
+console.log(display(100,300));
+
+
+
+
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>
