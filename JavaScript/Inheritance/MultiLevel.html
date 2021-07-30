@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script>
+			
+			class A{
+				constructor(z){
+				
+					this.z=z;
+				}
+				
+				first(){
+					document.write("Z: "+this.z);
+				}
+			}
+			
+			class B extends A{
+				constructor(y,z){
+					super(y,z);
+					this.y=y;
+				}
+				
+				second(){
+					document.write("Y: "+this.y);
+				}
+			}
+			
+			class C extends B{
+				constructor(x,y,z){
+					super(x,y,z);
+					this.x=x;
+				}
+				
+				third(){
+					document.write("X: "+this.x);
+				}
+			}
+			
+			let obj=new C(10,20,30);
+			
+			obj.first();
+			obj.second();
+			obj.third();
+			
+		</script>
+	</head>
+</html>
