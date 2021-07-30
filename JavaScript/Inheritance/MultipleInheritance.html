@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<script>
+		
+			class A{
+				get(){
+					console.log("class A");
+				}
+			}
+			
+			class B extends A{
+				put(){
+					console.log("Class B");
+				}
+			}
+			
+			class C extends A{
+				display(){
+					console.log("Class C");
+				}
+			}
+			
+			let obj= new C();
+			let obj1=new B();
+			obj.get();
+			obj.display();
+			obj1.get();
+			obj1.put();
+			
+		</script>
+	</head>
+</html>
