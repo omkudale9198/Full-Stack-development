@@ -1,0 +1,123 @@
+<html>
+
+	<body>
+		
+		<canvas id="mycanvas" width="500" height="500" style="border:1px solid red"> </canvas>
+		
+		<script>
+		
+			let canvas= document.getElementById("mycanvas");
+			
+			let context=canvas.getContext("2d");
+			
+			context.beginPath();
+			context.moveTo(200,0);
+			context.lineTo(200,100);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(300,0);
+			context.lineTo(300,100);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(0,200);
+			context.lineTo(100,200);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(0,300);
+			context.lineTo(100,300);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(200,500);
+			context.lineTo(200,400);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(300,500);
+			context.lineTo(300,400);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(500,200);
+			context.lineTo(400,200);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(500,300);
+			context.lineTo(400,300);
+			context.stroke();
+			
+			context.beginPath();
+			let x=canvas.height/2;
+			let y=canvas.width/2;
+			let r=160;
+			let sa=0*Math.PI;
+			let ea=2*Math.PI;
+			let ck=true;
+			context.strokeStyle="blue";
+			context.arc(x,y,r,sa,ea,ck);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(0,0);
+			context.lineTo(500,500);
+			context.strokeStyle="black";
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(0,500);
+			context.lineTo(500,0);
+			context.stroke();
+			
+			context.beginPath();
+			let x1=canvas.height/2;
+			let y1=canvas.width/2;
+			let r1=245;
+			let sa1=1.2*Math.PI;
+			let ea1=1.3*Math.PI;
+			let ck1=false;
+			context.strokeStyle="blue";
+			context.arc(x1,y1,r1,sa1,ea1,ck1);
+			context.stroke();
+			
+			context.beginPath();
+			let x2=canvas.height/2;
+			let y2=canvas.width/2;
+			let r2=245;
+			let sa2=1.7*Math.PI;
+			let ea2=1.8*Math.PI;
+			let ck2=false;
+			context.strokeStyle="blue";
+			context.arc(x2,y2,r2,sa2,ea2,ck2);
+			context.stroke();
+			
+			context.beginPath();
+			let x3=canvas.height/2;
+			let y3=canvas.width/2;
+			let r3=245;
+			let sa3=0.2*Math.PI;
+			let ea3=0.3*Math.PI;
+			let ck3=false;
+			context.strokeStyle="blue";
+			context.arc(x3,y3,r3,sa3,ea3,ck3);
+			context.stroke();
+			
+			context.beginPath();
+			let x4=canvas.height/2;
+			let y4=canvas.width/2;
+			let r4=245;
+			let sa4=0.7*Math.PI;
+			let ea4=0.8*Math.PI;
+			let ck4=false;
+			context.strokeStyle="blue";
+			context.arc(x4,y4,r4,sa4,ea4,ck4);
+			context.stroke();
+			
+		</script>
+		
+	</body>
+
+</html>
