@@ -21,8 +21,9 @@
 		<datalist id="city">
 			<option>Mumbai</option>
 			<option>Pune</option>
+			
 		</datalist><br>
-		
+		<output name="out">Hi</output><br>
 		
 		<input type="submit" value="SUBMIT" enctype="multipart/form-data">
 		
@@ -30,13 +31,22 @@
 		</form>
 		-->
 		
+		<form oninput="out.value=Number(a.value)+Number(b.value)">
+			<input type="text" name="a">
+			<input type="text" name="b"><br>
+			<output name="out"></output>
+		</form>
+		
+		
 		<form action="demo.py" method="get">
-			
+			<input type="email" name="Email">
 			<input type="text" name="fname" autocomplete="off" autofocus="on"><br>
 			<input type="submit" value="Admin" formaction="demo1.py">
-			<input type="submit" value="User" formmethod="post"><br>
-			
+			<input type="submit" value="User" formmethod="post" formenctype="multipart/form-data" formnovalidate><br>
+			<input type="file" name="file" multiple>
 		</form>
+		
+		
 		
 	</body>
 
