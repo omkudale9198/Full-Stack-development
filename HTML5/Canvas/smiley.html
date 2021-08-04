@@ -1,0 +1,81 @@
+<html>
+	
+	<body>
+		<canvas id="mycanvas" height="500" width="500"> </canvas>
+		
+		<script>
+			
+			let canvas=document.getElementById("mycanvas");
+			
+			let context=canvas.getContext("2d");
+			
+			context.beginPath();
+			let x=250;
+			let y=250;
+			let r=200;
+			let sa=0*Math.PI;
+			let ea=2*Math.PI;
+			let ck=false;
+			context.arc(x,y,r,sa,ea,ck);
+			context.stroke();
+			
+			context.beginPath();
+			let x1=175;
+			let y1=175;
+			let r1=20;
+			let sa1=0*Math.PI;
+			let ea1=2*Math.PI;
+			let ck1=false;
+			context.arc(x1,y1,r1,sa1,ea1,ck1);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(125,175);
+			context.quadraticCurveTo(175,100,225,175);
+			context.stroke();
+			
+			context.beginPath();
+			let x2=325;
+			let y2=175;
+			let r2=20;
+			let sa2=0*Math.PI;
+			let ea2=2*Math.PI;
+			let ck2=false;
+			context.arc(x2,y2,r2,sa2,ea2,ck2);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(275,175);
+			context.quadraticCurveTo(325,100,375,175);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(250,200);
+			context.lineTo(225,300);
+			context.CurveJoin="round";
+			context.quadraticCurveTo(250,325,275,300);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(180,350);
+			context.quadraticCurveTo(250,425,320,350);
+			context.stroke();
+			
+			context.beginPath();
+			context.moveTo(180,350);
+			context.quadraticCurveTo(250,380,320,350);
+			context.stroke();
+			
+			/*
+			let grd=context.createRadialGradient(85,50,5,85,50,80);
+			grd.addColorStop(0,"red");
+			grd.addColorStop(1,"green");
+			context.fillStyle=grd;
+			context.fillRect(10,10,150,80);
+			*/
+			
+		</script>
+		
+	</body>
+	
+</html>
