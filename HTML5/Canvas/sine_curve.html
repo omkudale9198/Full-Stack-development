@@ -1,0 +1,33 @@
+<html>
+	
+	<body>
+		<canvas id="mycanvas" height="500" width="500"> </canvas>
+		
+		<script>
+			
+			let canvas=document.getElementById("mycanvas");
+			
+			let context=canvas.getContext("2d");
+			
+			context.font = 'italic 40pt Calibri';
+			context.fillText('Sine Curve!', 150, 100);
+
+			context.beginPath();
+			context.moveTo(0,250);
+			context.lineTo(400,250);
+			context.moveTo(0,400);
+			context.lineTo(0,100);
+			context.moveTo(0,250);
+			context.quadraticCurveTo(50,125,100,250);
+			context.quadraticCurveTo(150,375,200,250);
+			context.quadraticCurveTo(250,125,300,250);
+			context.fillStyle = 'green';
+			context.fill();
+			context.stroke();
+			
+			
+			
+		</script>
+	</body>
+	
+</html>
