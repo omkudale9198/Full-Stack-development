@@ -1,0 +1,58 @@
+<html>
+
+	<head>
+		<style>
+		
+		
+			.outer{
+				height:600px;
+				width:1100px;
+				border:1px solid;
+				border-color:black;
+				position:relative;
+			}
+			
+			.inner{
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				animation:myanimation 5s infinite 2s;
+				-webkit-animation:myanimation 5s infinite 2s;
+				-moz-animation:myanimation 5s infinite 2s;
+				-ms-animation:myanimation 5s infinite 2s;
+				-o-animation:myanimation 5s infinite 2s;
+				position:absolute;
+			}
+			
+			@keyframes myanimation{
+				0%{background:yellow; left:0px; top:500px}
+				12.5%{background:green; left:250px; top:0px}
+				25%{background:blue; left:500px; top:500px}
+				37.5%{background:brown; left:750px; top:0px}
+				50%{background:yellow; left:1000px; top:500px}
+				62.5%{background:green; left:750px; top:0px}
+				75%{background:blue; left:500px; top:500px}
+				87.5%{background:brown; left:250px; top:0px}
+				100%{background:yellow; left:0px; top:500px}
+				
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<div class="outer">
+		
+			<div class="inner">
+			
+			</div>
+		
+		</div>
+	
+	</body>
+
+</html>
