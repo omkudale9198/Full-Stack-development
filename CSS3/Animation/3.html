@@ -1,0 +1,66 @@
+<html>
+
+	<head>
+		
+		<style>
+		
+			.outer{
+				height:600px;
+				width:1100px;
+				border:1px solid;
+				border-color:black;
+				position:relative;
+			}
+			
+			.inner1{
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				animation:myanimation 5s infinite;
+				-webkit-animation:myanimation 2s infinite;
+				position:absolute;
+			}
+			
+			.inner2{
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				animation:myanimation2 2s infinite;
+				position:absolute;
+			}
+			
+			@keyframes myanimation{
+			
+				0%{background:yellow; left:0px; top:250px}
+				50%{background:green; left:450px; top:250px}
+				100%{background:yellow; left:0px; top:250px}
+			}
+			
+			@keyframes myanimation2{
+			
+				0%{background:red; left:1000px; top:250px}
+				50%{background:blue; left:550px; top:250px}
+				100%{background:red; left:1000px; top:250px}
+			}
+		
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<div class="outer">
+		
+			<div class="inner1">
+			
+			</div>
+			
+			<div class="inner2">
+			
+			</div>
+		
+		</div>
+	
+	</body>
+
+</html>
