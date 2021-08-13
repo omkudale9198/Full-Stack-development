@@ -1,0 +1,164 @@
+<html>
+
+	<head>
+		<style>
+		
+			.outer{
+				height:500px;
+				width:750px;
+				background:green;
+				margin:auto;
+				border: 25px solid brown;
+				position:relative;
+			}
+			
+			.inner1{
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				background:black;
+				position:absolute;
+				float:left;
+			}
+			
+			.inner2{
+				height:50px;
+				width:50px;
+				margin-left:325px;
+				border-radius:50%;
+				background:black;
+				position:absolute;
+				float:left;
+			}
+			
+			.inner3{
+				height:50px;
+				width:50px;
+				margin-left:700px;
+				border-radius:50%;
+				background:black;
+				position:absolute;
+				float:left;
+			}
+			
+			.shooter{
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				background:white;	
+				position:absolute;
+				margin-left:325px;
+				margin-top:450px;
+			}
+			
+			.outer:hover .shooter{
+				animation:myanimation 0.5s 1;
+			}
+			
+			.ball1{
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				background:red;	
+				position:absolute;
+				margin-left:300px;
+				margin-top:300px;
+				
+			}
+			
+			.outer:hover .ball1{
+				animation:myanimation1 1s 1 0.3s;
+			}
+			
+			.ball2{
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				background:blue;	
+				position:absolute;
+				margin-left:350px;
+				margin-top:300px;
+			}
+			
+			.outer:hover .ball2{
+				animation:myanimation2 1s 1 0.3s;
+			}
+			
+			.ball3{
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				background:yellow;	
+				position:absolute;
+				margin-left:325px;
+				margin-top:250px;
+			}
+			
+			.outer:hover .ball3{
+				animation:myanimation3 1s 1 0.3s;
+			}
+			
+			@keyframes myanimation{
+				0%{left:0px; top:0px}
+				100%{left:0px; top:-125px}
+			}
+			
+			@keyframes myanimation1{
+				0%{left:0px; top:0px}
+				100%{left:-300px; top:-300px}
+			}
+			
+			@keyframes myanimation2{
+				0%{left:0px; top:0px}
+				100%{left:350px; top:-300px}
+			}
+			
+			@keyframes myanimation3{
+				0%{left:0px; top:0px}
+				100%{left:0px; top:-250px}
+			}
+			
+			
+			
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div class="outer">
+		
+			<div class="inner1">
+			
+			</div>
+			
+			<div class="inner2">
+			
+			</div>
+			
+			<div class="inner3">
+			
+			</div>
+			
+			<div class="shooter">
+			
+			</div>
+			
+			<div class="ball1">
+			
+			</div>
+			
+			<div class="ball2">
+			
+			</div>
+			
+			<div class="ball3">
+			
+			</div>
+			
+		</div>
+		
+	</body>
+
+</html>
