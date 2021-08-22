@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+		<script src="jquery.js">
+		
+		</script>
+		
+		<script>
+			
+			$(document).ready(function(){
+			//$("selector").action;
+			
+				//$("#a").text("Welcome").css("color","yellow");
+				//$("#d1").css("background","red");
+				//$("p").css("background","red");					//all p
+				//$("*").css("background","red");					//Whole File
+				//$("p[class]").css("background","red");    		//all class
+				//$("p[class=c2]").css("background","red");			//Single class
+				//$("p[class=c2],p[class=c1]").css("background","red");	//Multiple class
+				//$("p[class^=c]").css("background","red");			//starting with c1
+				//$("p:even").css("background","red");				//first, last, odd, even
+				
+				/*
+				let str="javascript";
+				let l=str.charAt(5);
+				$("#a").text(l);
+				*/
+				
+				$("a[target]").after("   New Window");
+				
+			});
+			
+			
+			
+		</script>
+		
+		
+	</head>
+
+	<body>
+		<p id="a"></p>
+		<p id="d1">JQuery Day 1</p>
+		<p class="c1">JQuery Day 1</p>
+		<p id="d2">JQuery Day 1</p>
+		<p class="c2">JQuery Day 1</p>
+		<p id="d3">JQuery Day 1</p>
+		<p class="c3">JQuery Day 1</p>
+		
+		<a href="#" target="_blank">Facebook</a>
+	
+	</body>
+
+</html>
