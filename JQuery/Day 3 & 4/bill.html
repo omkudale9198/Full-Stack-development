@@ -1,0 +1,51 @@
+
+<html>
+
+	<head>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("#total").change(function(){
+				$("#discount").change(function(){
+					let discount=parseInt($("#discount").val());
+					let total=parseInt($("#total").val());
+					
+					let save=(total*discount)/100;
+					
+					$("#save").text(save);
+					
+					let paid=total-save;
+					$("#paid").text(paid);
+						
+				})
+				})
+				
+			})
+		</script>
+	</head>
+	
+	<body>
+	<h1>Bill Details</h1>
+	<form>
+		<table>
+		<tr>
+		<td>Total Bill: </td><td><input type="text" id="total"></td>
+		</tr>
+		<tr>
+		<td>%Discount: </td><td><input type="text" id="discount"></td>
+		</tr>
+		<tr>
+		<td>Amount Saved: </td><td id="save"></td>
+		</tr>
+		<tr>
+		<td>Paid Bill: </td><td id="paid"</td>
+		</tr>
+		</table>
+	</form>
+	</body>
+
+</html>
+
+
+
