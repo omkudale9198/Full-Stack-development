@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style>
+	.ancestors *
+	{ 
+	display: block;
+	border: 2px solid  black;
+	color: lightgrey;
+	padding: 5px;
+	margin: 15px;
+	}
+</style>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+	
+	$("button").click(function(){
+	  $("a").parent().css({"background-color":"yellow"});
+	
+	})
+	});
+	
+	/*
+	$(document).ready(function(){
+	  $("a").parentAll().css({"background-color":"yellow"});
+	});
+	
+	*/
+</script>
+</head>
+<body>
+
+	<div class="ancestors">
+	  
+	  <ul>
+	  <li><a href="#">HOME</a></li>
+	  </ul>
+	</div>
+	
+	<button>Click </button>
+
+</body>
+</html>
