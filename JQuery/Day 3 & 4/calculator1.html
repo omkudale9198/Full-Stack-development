@@ -1,0 +1,78 @@
+<html>
+	
+	<head>
+		<script src="jquery.js">
+		
+		</script>
+		<script>
+			
+			$(document).ready(function(){
+				 
+				$("#add").click(function(){
+					let n1=parseInt($("#t1").val());
+					let n2=parseInt($("#t2").val());
+					
+					let res=n1+n2;
+					$("#res").val(res);
+				});
+				
+				$("#sub").click(function(){
+					let n1=parseInt($("#t1").val());
+					let n2=parseInt($("#t2").val());
+					
+					let res=n1-n2;
+					$("#res").val(res);
+				});
+				
+				$("#mul").click(function(){
+					let n1=parseInt($("#t1").val());
+					let n2=parseInt($("#t2").val());
+					
+					let res=n1*n2;
+					$("#res").val(res);
+				});
+				
+				$("#div").click(function(){
+					let n1=parseInt($("#t1").val());
+					let n2=parseInt($("#t2").val());
+					
+					let res=n1/n2;
+					$("#res").val(res);
+				});
+				
+				$("#mod").click(function(){
+					let n1=parseInt($("#t1").val());
+					let n2=parseInt($("#t2").val());
+					
+					let res=n1%n2;
+					$("#res").val(res);
+				});
+			
+			})
+		
+		
+		</script>
+	
+	</head>
+	
+	<body>
+	
+		<form name="f1">
+		First No.:<input type="text" name="fno" id="t1">
+		Second No.:<input type="text" name="sno" id="t2">
+		<br>
+		<br>
+		<input type="button" value="+" id="add">
+		<input type="button" value="-" id="sub">
+		<input type="button" value="*" id="mul">
+		<input type="button" value="/" id="div">
+		<input type="button" value="%" id="mod">
+		<br>
+		<br>
+		Result: <input type="text" id="res">
+		
+	</form>
+	
+	</body>
+
+</html>
