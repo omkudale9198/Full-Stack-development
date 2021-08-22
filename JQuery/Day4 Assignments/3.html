@@ -1,0 +1,101 @@
+<html>
+
+	<head>
+		<style>
+		
+			*{
+				margin:0px;
+				padding:0;
+			}
+			 .nav{
+                height: 50px;
+                width: 1000px;
+                background: lightgreen;
+                
+            }
+
+            .nav li{
+                list-style: none;
+                float: left;
+                line-height: 50px;
+                width: 180px;
+                height: 50px;
+                text-align: center;
+                
+            }
+
+            .nav li a{
+                text-decoration: none;
+                width: 180px;
+                height: 50px;
+                display: block;
+                color:black;
+            }
+
+            .nav li a:hover{
+                background: yellow;
+                color: black;
+                display: block;
+
+            }
+			
+			.nav li ul{
+                display: none;
+            }
+			
+			
+		
+		</style>
+		
+		<script src="jquery.js"> </script>
+		
+		<script>
+			
+			$(document).ready(function(){
+			
+				$(".home").click(function(){
+					$("#home").slideToggle();
+				})
+				
+				$(".services").click(function(){
+					$("#services").slideToggle();
+				})
+			
+			})
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		
+			<div class="nav">
+			
+			<ul>
+                <li class="home"><a href="#">Home</a>
+                    <ul id="home">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2 </a></li>
+                        <li><a href="#">Home 3 </a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+				<li class="services"><a href="#">Services</a>
+					<ul id="services">
+						 <li><a href="#">Service 1</a></li>
+						 <li><a href="#">Service 2</a></li>
+						 <li><a href="#">Service 3</a></li>
+					</ul>
+				</li>
+            </ul>
+        </div>
+			
+		
+		
+		
+	</body>
+
+</html>
