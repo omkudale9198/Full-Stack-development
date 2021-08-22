@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("img").slideUp();
+  });
+  $(".btn2").click(function(){
+    $("img").slideDown();
+  });
+});
+</script>
+</head>
+<body>
+
+<img src="dog.jpg"><br/>
+<button class="btn1">Slide up</button>
+<button class="btn2">Slide down</button>
+
+</body>
+</html>
