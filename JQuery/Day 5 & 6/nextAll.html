@@ -1,0 +1,74 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").next().css({"color":"red"});
+});
+</script>
+</head>
+<body>
+
+<div>
+<h1>Next</h1>
+<p> This is a <span>paragraph</span></p>
+<a href="index.html">HOME</a>
+</div>
+<hr>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").nextAll().css({"color":"red"});
+});
+</script>
+</head>
+<body>
+
+<div>
+<h2>nextAll</h2>
+<h1>welcome</h1>
+<p> This is a <span>paragraph</span></p>
+<a href="index.html">HOME</a>
+</div>
+<hr>
+
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("h1").nextUntil("a").css({"color":"red"});
+});
+</script>
+</head>
+<body>
+
+<div>
+<h1>nextUntill</h1>
+<p> This is a <span>paragraph</span></p>
+<a href="index.html">HOME</a>
+<h2>hi</h2>
+</div>
+<hr>
+
+</body>
+</html>
