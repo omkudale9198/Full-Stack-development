@@ -1,0 +1,83 @@
+<html>
+
+	<head>
+		<script src="jquery.js">	
+		
+		</script>
+			
+			
+		<script>
+			
+			$(document).ready(function(){
+				
+				$("input:eq(0)").keyup(function(){
+					let v=$(this).val();
+					
+					$("#s1").text(v);
+				
+				});
+				
+				$("input:eq(1)").keyup(function(){
+					let v=$(this).val();
+					
+					$("#s2").text(v);
+				
+				});
+				
+				$("input:eq(2)").keyup(function(){
+					let v=$(this).val();
+					
+					$("#s3").text(v);
+				
+				});
+				
+				$("input:eq(3)").keyup(function(){
+					let v=$(this).val();
+					
+					$("#s4").text(v);
+				
+				});
+			})
+			
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<form>
+			
+			<table>
+			
+				<tr>
+					<th>Name</th>
+					<td> <input type="text" name="fname" id="t1"><span id="s1"></span></td>
+					
+				</tr>
+				
+				<tr>
+					<th>Surname</th>
+					<td id="s"> <input type="text" name="sname" id="t2"><span id="s2"></span></td>
+					
+				</tr>
+				
+				<tr>
+					<th>Email</th>
+					<td id="e"> <input type="email" name="email" id="t3"><span id="s3"></span></td>
+					
+				</tr>
+				
+				<tr>
+					<th>Number</th>
+					<td id="no"> <input type="text" name="number" id="t4"><span id="s4"></span></td>
+					
+				</tr>
+			
+			</table>
+			
+		</form>
+		
+		
+	</body>
+
+</html>
