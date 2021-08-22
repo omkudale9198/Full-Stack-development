@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#start").click(function(){
+    $("img").animate({height:300},1500);
+    $("img").animate({width:300},1500);
+
+  });
+  $("#stop").click(function(){
+    $("img").clearQueue();
+  });
+});
+</script>
+</head>
+<body>
+	<button id="start">Start Animation</button>
+	<button id="stop">Stop Animation</button>
+<br><br>
+<div>
+<img src="dog.jpg">
+</div>
+</body>
+</html>
