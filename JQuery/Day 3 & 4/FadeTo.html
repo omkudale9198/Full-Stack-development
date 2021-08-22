@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript" 
+src="jquery.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+      $("#more").click(function(){
+         $(".target").fadeTo( 'slow', 0.7, function(){ 
+		 
+          });
+      });
+
+      $("#less").click(function(){
+         $(".target").fadeTo( 'slow', 0.2, function(){ 
+
+          });
+      });
+
+   });
+</script>
+</head>
+<body>
+<button id="less"> Less Opacity </button>
+<button id="more"> More Opacity</button>
+<div class="target">
+	<img src="dog.jpg" />
+</div>
+</body>
+</html>
