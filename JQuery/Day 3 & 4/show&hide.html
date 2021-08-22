@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+.d{width:200px;height:200px;background:red;}
+</style>
+<script src="jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$(".d").hide('fast');
+		});
+		$("#show").click(function(){
+			$(".d").show('fast');
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="d">
+</div>
+<input type="button" value="hide" id="hide">
+<input type="button" value="show" id="show">
+</body>
+</html>
