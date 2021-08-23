@@ -1,0 +1,112 @@
+<html>
+	
+	<head>
+	
+		<style>
+			
+			.main{
+				margin:auto;
+				background:black;
+				height:500px;
+				width:1000px;
+				position:relative;
+			}
+			
+			.blue{
+				height:20px;
+				width:20px;
+				border-radius:50%;
+				margin-top:25%;
+				margin-left:20%;
+				border: 10px solid blue;
+				background:blue;
+				float:left;
+				animation:animeblue 2s infinite;
+				position:absolute;
+			}
+			
+			@keyframes animeblue{
+				0%{top:0px}
+				25%{top:-50px}
+				50%{top:0px}
+				75%{top:50px}
+				100%{top:0px}
+			}
+			
+			.red{
+				height:20px;
+				width:20px;
+				border-radius:50%;
+				margin-top:25%;
+				margin-left:40%;
+				border: 10px solid red;
+				background:red;
+				float:left;
+				animation:animered 2s infinite 0.25s;
+				position:absolute;
+			}
+			
+			@keyframes animered{
+				0%{top:0px}
+				25%{top:-50px}
+				50%{top:0px}
+				75%{top:50px}
+				100%{top:0px}
+			}
+			
+			.yellow{
+				height:20px;
+				width:20px;
+				border-radius:50%;
+				margin-top:25%;
+				margin-left:60%;
+				border: 10px solid yellow;
+				background:yellow;
+				float:left;
+				animation:animeyellow 2s infinite 0.5s;
+				position:absolute;
+			}
+			
+			@keyframes animeyellow{
+				0%{top:0px}
+				25%{top:-50px}
+				50%{top:0px}
+				75%{top:50px}
+				100%{top:0px}
+			}
+			
+			.green{
+				height:20px;
+				width:20px;
+				border-radius:50%;
+				margin-top:25%;
+				margin-left:80%;
+				border: 10px solid green;
+				background:green;
+				float:left;
+				animation:animegreen 2s infinite 0.75s;
+				position:absolute;
+			}
+			
+			@keyframes animegreen{
+				0%{top:0px}
+				25%{top:-50px}
+				50%{top:0px}
+				75%{top:50px}
+				100%{top:0px}
+			}
+			
+		</style>
+	
+	</head>
+	
+	<body>
+	<div class="main">
+		<div class="blue"> </div>
+		<div class="red"> </div>
+		<div class="yellow"> </div>
+		<div class="green"> </div>
+	</div>
+	</body>
+	
+</html>
