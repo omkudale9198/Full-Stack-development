@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+		
+		<script src="jquery.js"> </script>
+		
+		<script>
+			$(document).ready(function(){
+				$("input:eq(0)").keyup(function(){
+					if($(this).val()!="")
+						$(this).next().focus();					
+				})
+				
+				$("input:eq(1)").keyup(function(){
+					if($(this).val()!="")
+						$(this).next().focus();					
+				})
+				
+				$("input:eq(2)").keyup(function(){
+					if($(this).val()!="")
+						$(this).next().focus();					
+				})
+				
+				$("input:eq(3)").keyup(function(){
+					if($(this).val()!="")
+						$(this).next().focus();					
+				})
+				
+				
+			})
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="text" id="n1" style="width:50px">
+		<input type="text" id="n2" style="width:50px">
+		<input type="text" id="n3" style="width:50px">
+		<input type="text" id="n4" style="width:50px"><br><br>
+		
+		
+	</body>
+
+</html>
