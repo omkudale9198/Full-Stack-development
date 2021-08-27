@@ -1,0 +1,39 @@
+<html>
+
+	<head>
+		
+		<script src="jquery.js"> </script>
+		
+		<script>
+			$(document).ready(function(){
+				$("input").keyup(function(){
+					let fname=$("#fname").val();
+					let lname=$("#lname").val();
+					let email=$("#email").val();
+					
+					if(fname!="" && lname!="" && email!=""){
+						$("#submit").attr("disabled", false);
+					}
+					
+					else{
+						$("#submit").attr("disabled", true);
+					}
+				})
+				
+			})
+		</script>
+		
+	</head>
+	
+	<body>
+		<form>
+			
+			Fname:<input type="text" id="fname"><br>
+			Lname:<input type="text" id="lname"><br>
+			Email:<input type="email" id="email"><br>
+			<input type="submit" id="submit" disabled>
+			
+		</form>
+	</body>
+
+</html>
