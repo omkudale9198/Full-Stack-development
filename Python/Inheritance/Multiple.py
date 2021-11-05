@@ -4,7 +4,7 @@ class A:
         print("This is get from class A")
 
 class B:
-    def put(self):              #ambiguity
+    def get(self):              #ambiguity
         self.y=100
         print("This is put from class B")
 
